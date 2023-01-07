@@ -1,0 +1,6 @@
+﻿Hello {0},
+
+Please find your perfect PC list as of {1}.
+
+Regards,
+{2}

@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>621,679</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>759.2,679.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>FetchLaptopsPCGarage_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -91,12 +91,12 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="FetchLaptopsPCGarage" sap:VirtualizedContainerService.HintSize="614,614" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="FetchLaptopsPCGarage" sap:VirtualizedContainerService.HintSize="614.4,614.4" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">410,2.5</av:Point>
-        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:Size x:Key="ShapeSize">60,75.2</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">440,77.5 440,107.5 400,107.5 400,115</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
@@ -107,11 +107,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">180,269.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,61</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">280,330.5 280,360.5 270,360.5 270,429.02</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">280,322.3 280,352.3 270,352.3 270,429.02</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:WriteCsvFile AddHeaders="True" DataTable="[laptopsTable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="outputDebugPCGarage.csv" sap:VirtualizedContainerService.HintSize="200,61" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True">
+      <ui:WriteCsvFile AddHeaders="True" DataTable="[laptopsTable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="outputDebugPCGarage.csv" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -123,10 +123,10 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">170,429.02</av:Point>
-              <av:Size x:Key="ShapeSize">200,61</av:Size>
+              <av:Size x:Key="ShapeSize">200,52.8</av:Size>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Laptopuri'" sap:VirtualizedContainerService.HintSize="434,278" sap2010:WorkflowViewState.IdRef="BrowserScope_4" InformativeScreenshot="06b28fcbee7b86510d535b5a5090b135" Selector="&lt;html app='chrome.exe' htmlwindowname='oktab1213926684552078' title='Laptopuri gaming, business si scoala - PC Garage' /&gt;">
+          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Laptopuri'" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="BrowserScope_4" InformativeScreenshot="06b28fcbee7b86510d535b5a5090b135" Selector="&lt;html app='chrome.exe' htmlwindowname='oktab1213926684552078' title='Laptopuri gaming, business si scoala - PC Garage' /&gt;">
             <ui:BrowserScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -155,11 +155,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">300,115</av:Point>
-          <av:Size x:Key="ShapeSize">200,90</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">400,205 400,235 280,235 280,269.5</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,83.2</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">400,198.2 400,228.2 280,228.2 280,269.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="200,90" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="200,83.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
         <Sequence.Variables>
           <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
         </Sequence.Variables>

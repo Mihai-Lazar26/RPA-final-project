@@ -20619,19 +20619,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ioan\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\mihai\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "RPAfinalProject",
       "projectName": "RPAfinalProject",
-      "projectPath": "C:\\Users\\Ioan\\Desktop\\AN 3\\RPA\\RPA-final-project\\RPAfinalProject\\.local",
-      "packagesPath": "C:\\Users\\Ioan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ioan\\Desktop\\AN 3\\RPA\\RPA-final-project\\RPAfinalProject\\.local",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ]
+      "projectPath": "D:\\Facultate info\\Anul 3\\semestrul 1\\RPA Uipath\\Proiect\\RPA-final-project\\RPAfinalProject\\.local",
+      "packagesPath": "C:\\Users\\mihai\\.nuget\\packages\\",
+      "outputPath": "D:\\Facultate info\\Anul 3\\semestrul 1\\RPA Uipath\\Proiect\\RPA-final-project\\RPAfinalProject\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -20662,7 +20658,7 @@
             "version": "[22.10.3, 22.10.3]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Ioan\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\mihai\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {

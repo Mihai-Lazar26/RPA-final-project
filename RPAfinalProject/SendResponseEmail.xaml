@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>759.2,679.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>896,701.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SendResponseEmail_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
@@ -68,7 +68,7 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="SendResponseEmail" sap:VirtualizedContainerService.HintSize="614.4,614.4" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="SendResponseEmail" sap:VirtualizedContainerService.HintSize="633.6,636.8" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:String" Name="body" />
       <Variable x:TypeArguments="x:String" Name="template" />
@@ -129,9 +129,13 @@
                   <av:Size x:Key="ShapeSize">200,52.8</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[body]" DisplayName="Send SMTP Mail Message" Email="proiectRPA2023@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="avuvjdefnehxring" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="List of PC" To="[mail.From.ToString]">
+              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[body]" DisplayName="Send SMTP Mail Message" Email="proiectRPA2023@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,148.8" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="avuvjdefnehxring" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="List of PC" To="[mail.From.ToString]">
                 <ui:SendMail.Files>
-                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
+                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String">outputLaptopsTable.csv</Literal>
+                    </InArgument>
+                  </scg:List>
                 </ui:SendMail.Files>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">

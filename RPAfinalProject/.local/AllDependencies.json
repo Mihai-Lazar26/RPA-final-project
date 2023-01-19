@@ -20619,15 +20619,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mihai\\.nuget\\packages\\": {}
+    "C:\\Users\\andre\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "RPAfinalProject",
       "projectName": "RPAfinalProject",
-      "projectPath": "D:\\Facultate info\\Anul 3\\semestrul 1\\RPA Uipath\\Proiect\\RPA-final-project\\RPAfinalProject\\.local",
-      "packagesPath": "C:\\Users\\mihai\\.nuget\\packages\\",
-      "outputPath": "D:\\Facultate info\\Anul 3\\semestrul 1\\RPA Uipath\\Proiect\\RPA-final-project\\RPAfinalProject\\.local"
+      "projectPath": "C:\\Folderul meu\\FACULTATE\\AN 3\\SEM 1\\RPA\\RPA-final-project\\RPAfinalProject\\.local",
+      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+      "outputPath": "C:\\Folderul meu\\FACULTATE\\AN 3\\SEM 1\\RPA\\RPA-final-project\\RPAfinalProject\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -20658,7 +20658,7 @@
             "version": "[22.10.3, 22.10.3]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\mihai\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\andre\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {

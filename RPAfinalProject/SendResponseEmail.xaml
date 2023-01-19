@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>896,701.6</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>809.6,701.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SendResponseEmail_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="48">
@@ -133,7 +133,7 @@
                 <ui:SendMail.Files>
                   <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
                     <InArgument x:TypeArguments="x:String">
-                      <Literal x:TypeArguments="x:String">outputLaptopsTable.csv</Literal>
+                      <Literal x:TypeArguments="x:String">outputLaptopsTable.xlsx</Literal>
                     </InArgument>
                   </scg:List>
                 </ui:SendMail.Files>

@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>864,679.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>604,679</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>FetchLaptopsPCGarage_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -91,12 +91,12 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="FetchLaptopsPCGarage" sap:VirtualizedContainerService.HintSize="614.4,614.4" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="FetchLaptopsPCGarage" sap:VirtualizedContainerService.HintSize="614,614" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">410,2.5</av:Point>
-        <av:Size x:Key="ShapeSize">60,75.2</av:Size>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">440,77.5 440,107.5 400,107.5 400,115</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
@@ -107,7 +107,7 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">180,269.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+          <av:Size x:Key="ShapeSize">200,53</av:Size>
           <av:PointCollection x:Key="ConnectorLocation">280,322.3 280,352.3 270,352.3 270,429.02</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -123,7 +123,7 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">170,429.02</av:Point>
-              <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+              <av:Size x:Key="ShapeSize">200,53</av:Size>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'chrome.exe Laptopuri'" sap:VirtualizedContainerService.HintSize="433.6,261.6" sap2010:WorkflowViewState.IdRef="BrowserScope_4" InformativeScreenshot="06b28fcbee7b86510d535b5a5090b135" Selector="&lt;html app='chrome.exe' htmlwindowname='*' title='* - PC Garage' /&gt;">
@@ -155,11 +155,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">300,115</av:Point>
-          <av:Size x:Key="ShapeSize">200,83.2</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">400,198.2 400,228.2 280,228.2 280,269.5</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,90</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">400,205 400,296 380,296</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="200,83.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="496,484" sap2010:WorkflowViewState.IdRef="Sequence_6">
         <Sequence.Variables>
           <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
         </Sequence.Variables>
@@ -168,19 +168,19 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Laptopuri Page'" sap:VirtualizedContainerService.HintSize="433.6,344" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="19a2ff9e7ac6e06f3208d3668a44542d" Selector="&lt;html app='chrome.exe' htmlwindowname='*' title='* - PC Garage' /&gt;">
+        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser 'Laptopuri Page'" sap:VirtualizedContainerService.HintSize="434,362" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="19a2ff9e7ac6e06f3208d3668a44542d" Selector="&lt;html app='chrome.exe' htmlwindowname='*' title='* - PC Garage' /&gt;">
           <ui:BrowserScope.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,196.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,206" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[laptopsTable]" DisplayName="Extract Structured Data 'DIV  wrapper_listing_pr...'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Nume' attr='text' name2='Link' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="356.8,107.2" sap2010:WorkflowViewState.IdRef="ExtractData_2" MaxNumberOfResults="100" NextLinkSelector="&lt;webctrl aria-label='Pagina urmatoare' idx='2' tag='A' /&gt;" SimulateClick="True">
+                <ui:ExtractData DelayBetweenPagesMS="{x:Null}" ContinueOnError="True" DataTable="[laptopsTable]" DisplayName="Extract Structured Data 'DIV  wrapper_listing_pr...'" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Titlu laptop' attr='text' name2='Link laptop' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="ExtractData_2" MaxNumberOfResults="100" NextLinkSelector="&lt;webctrl aria-label='Pagina urmatoare' idx='2' tag='A' /&gt;" SimulateClick="True">
                   <ui:ExtractData.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e77701a1-a300-4e17-93d4-e682dc4821cb" InformativeScreenshot="10579989701582f03c03298eb0b5a40e" Selector="&lt;webctrl id='wrapper_listing_products' tag='DIV' /&gt;" WaitForReady="COMPLETE">
                       <ui:Target.TimeoutMS>

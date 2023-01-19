@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>604,679.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>604,679</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ApplyFiltersEmag_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -88,12 +88,12 @@
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="ApplyFiltersEmag" sap:VirtualizedContainerService.HintSize="614.4,614.4" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="ApplyFiltersEmag" sap:VirtualizedContainerService.HintSize="614,614" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
-        <av:Size x:Key="ShapeSize">60,75.2</av:Size>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">300,77.7 300,143.6</av:PointCollection>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
@@ -104,34 +104,30 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,143.6</av:Point>
-          <av:Size x:Key="ShapeSize">200,52.8</av:Size>
+          <av:Size x:Key="ShapeSize">200,61</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="551.2,3427.2" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="3" RetryInterval="00:00:10">
+      <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="551,3502" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="3" RetryInterval="00:00:10">
         <ui:RetryScope.ActivityBody>
           <ActivityAction>
-            <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="509.6,3251.2" sap2010:WorkflowViewState.IdRef="Sequence_57">
+            <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="509,3318" sap2010:WorkflowViewState.IdRef="Sequence_57">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="466.4,3161.6" sap2010:WorkflowViewState.IdRef="OpenBrowser_3" Url="https://www.emag.ro/laptopuri/c">
+              <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="467,3228" sap2010:WorkflowViewState.IdRef="OpenBrowser_3" Url="https://www.emag.ro/laptopuri/c">
                 <ui:OpenBrowser.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,3059.2" sap2010:WorkflowViewState.IdRef="Sequence_118">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,3117" sap2010:WorkflowViewState.IdRef="Sequence_118">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:Boolean" Name="siteIsOpen" />
                         <Variable x:TypeArguments="x:Boolean" Name="existsCategory" />
                         <Variable x:TypeArguments="x:String" Default="[preferences(0).ToString]" Name="laptopCategory" />
-                        <Variable x:TypeArguments="x:String" Name="laptopBrand">
-                          <Variable.Default>
-                            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="preferences(1).ToString" />
-                          </Variable.Default>
-                        </Variable>
+                        <Variable x:TypeArguments="x:String" Default="[preferences(1).ToString]" Name="laptopBrand" />
                         <Variable x:TypeArguments="x:Boolean" Name="existsBrand" />
                         <Variable x:TypeArguments="x:Boolean" Name="existsProcBrand" />
                         <Variable x:TypeArguments="x:String" Default="[preferences(4).ToString]" Name="laptopProcBrand" />
@@ -147,8 +143,8 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="356.8,24.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_2" />
-                      <ui:UiElementExists DisplayName="Check if site is opened" Exists="[siteIsOpen]" sap:VirtualizedContainerService.HintSize="356.8,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_21">
+                      <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="358,32" sap2010:WorkflowViewState.IdRef="MaximizeWindow_2" />
+                      <ui:UiElementExists DisplayName="Check if site is opened" Exists="[siteIsOpen]" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="UiElementExists_21">
                         <ui:UiElementExists.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3e87d29e-aca9-4d14-92c5-21d999fc0848" InformativeScreenshot="b6f1165179ca8e479d697ae74ec71b8e" Selector="&lt;webctrl aaname='Laptopuri' tag='H1' /&gt;">
                             <ui:Target.TimeoutMS>
@@ -160,7 +156,7 @@
                           </ui:Target>
                         </ui:UiElementExists.Target>
                       </ui:UiElementExists>
-                      <If Condition="[siteIsOpen &lt;&gt; True]" DisplayName="If site is not opened, throw excepetion" sap:VirtualizedContainerService.HintSize="356.8,52.8" sap2010:WorkflowViewState.IdRef="If_21">
+                      <If Condition="[siteIsOpen &lt;&gt; True]" DisplayName="If site is not opened, throw excepetion" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="If_21">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -168,17 +164,17 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence sap:VirtualizedContainerService.HintSize="400,180" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                          <Sequence sap:VirtualizedContainerService.HintSize="400,187" sap2010:WorkflowViewState.IdRef="Sequence_60">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Throw Exception="[new BusinessRuleException(&quot;eMAG could not be opened.&quot;)]" sap:VirtualizedContainerService.HintSize="356.8,90.4" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                            <Throw Exception="[new BusinessRuleException(&quot;eMAG could not be opened.&quot;)]" sap:VirtualizedContainerService.HintSize="358,97" sap2010:WorkflowViewState.IdRef="Throw_2" />
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence sap:VirtualizedContainerService.HintSize="400,82.4" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                          <Sequence sap:VirtualizedContainerService.HintSize="400,81" sap2010:WorkflowViewState.IdRef="Sequence_61">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -187,7 +183,7 @@
                           </Sequence>
                         </If.Else>
                       </If>
-                      <ui:TextExists FormattedText="{x:Null}" DisplayName="Check if brand exists" sap:VirtualizedContainerService.HintSize="356.8,135.2" sap2010:WorkflowViewState.IdRef="TextExists_10" Occurrence="1" Result="[existsBrand]" Text="[laptopBrand]">
+                      <ui:TextExists FormattedText="{x:Null}" DisplayName="Check if brand exists" sap:VirtualizedContainerService.HintSize="358,144" sap2010:WorkflowViewState.IdRef="TextExists_10" Occurrence="1" Result="[existsBrand]" Text="[laptopBrand]">
                         <ui:TextExists.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f255cb49-aafa-45a6-b1d0-d7a119f3e017" InformativeScreenshot="f78a0ba50bec60b501d5f0258abbd5f8" Selector="&lt;webctrl class='sidebar-container-body' idx='2' parentid='main-container' tag='DIV' /&gt;">
                             <ui:Target.TimeoutMS>
@@ -199,7 +195,7 @@
                           </ui:Target>
                         </ui:TextExists.Target>
                       </ui:TextExists>
-                      <If Condition="[existsBrand = True]" DisplayName="If brand exists, click on it" sap:VirtualizedContainerService.HintSize="356.8,52.8" sap2010:WorkflowViewState.IdRef="If_23">
+                      <If Condition="[existsBrand = True]" DisplayName="If brand exists, click on it" sap:VirtualizedContainerService.HintSize="508,826" sap2010:WorkflowViewState.IdRef="If_23">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -207,19 +203,19 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence sap:VirtualizedContainerService.HintSize="426.4,484.8" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                          <Sequence sap:VirtualizedContainerService.HintSize="426,472" sap2010:WorkflowViewState.IdRef="Sequence_64">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:AnchorBase AnchorPosition="Top" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="383.2,395.2" sap2010:WorkflowViewState.IdRef="AnchorBase_2">
+                            <ui:AnchorBase AnchorPosition="Top" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="384,382" sap2010:WorkflowViewState.IdRef="AnchorBase_2">
                               <ui:AnchorBase.Action>
                                 <ActivityAction x:TypeArguments="ui:Anchor">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
                                   </ActivityAction.Argument>
-                                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="2000" DisplayName="Click 'A '" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_40" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="2000" DisplayName="Click 'A '" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="Click_40" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -244,7 +240,7 @@
                                 </ActivityAction>
                               </ui:AnchorBase.Action>
                               <ui:AnchorBase.AnchorProvider>
-                                <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'H3'" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
+                                <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'H3'" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
                                   <ui:WaitUiElementAppear.Target>
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="afca388c-5e65-49bf-b970-e70fef9aa890" InformativeScreenshot="01e01b483019f6577d24fd8eef135e7a" Selector="&lt;webctrl aaname='Brand' parentid='main-container' tag='A' /&gt;">
                                       <ui:Target.TimeoutMS>
@@ -261,17 +257,17 @@
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence sap:VirtualizedContainerService.HintSize="400,182.4" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                          <Sequence sap:VirtualizedContainerService.HintSize="400,191" sap2010:WorkflowViewState.IdRef="Sequence_65">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="356.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Warn" Message="[&quot;eMAG error: Requested brand doesn't exist.&quot;]" />
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="358,101" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Warn" Message="[&quot;eMAG error: Requested brand doesn't exist.&quot;]" />
                           </Sequence>
                         </If.Else>
                       </If>
-                      <ui:TextExists FormattedText="{x:Null}" DisplayName="Check if category exists" sap:VirtualizedContainerService.HintSize="356.8,135.2" sap2010:WorkflowViewState.IdRef="TextExists_1" Occurrence="1" Result="[existsCategory]" Text="[laptopCategory]">
+                      <ui:TextExists FormattedText="{x:Null}" DisplayName="Check if category exists" sap:VirtualizedContainerService.HintSize="358,144" sap2010:WorkflowViewState.IdRef="TextExists_1" Occurrence="1" Result="[existsCategory]" Text="[laptopCategory]">
                         <ui:TextExists.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f255cb49-aafa-45a6-b1d0-d7a119f3e017" InformativeScreenshot="f78a0ba50bec60b501d5f0258abbd5f8" Selector="&lt;webctrl class='sidebar-container-body' idx='2' parentid='main-container' tag='DIV' /&gt;">
                             <ui:Target.TimeoutMS>
@@ -283,7 +279,7 @@
                           </ui:Target>
                         </ui:TextExists.Target>
                       </ui:TextExists>
-                      <If Condition="[existsCategory = True]" DisplayName="If category exists, click on it" sap:VirtualizedContainerService.HintSize="356.8,52.8" sap2010:WorkflowViewState.IdRef="If_22">
+                      <If Condition="[existsCategory = True]" DisplayName="If category exists, click on it" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="If_22">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>

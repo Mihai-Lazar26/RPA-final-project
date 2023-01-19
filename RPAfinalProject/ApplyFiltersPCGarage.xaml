@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>759.2,786.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>749.6,786.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ApplyFiltersPCGarage_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -119,28 +119,28 @@
           <av:Size x:Key="ShapeSize">200,52.8</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:RetryScope ContinueOnError="False" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="701.6,3840.8" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="3" RetryInterval="00:00:10">
+      <ui:RetryScope ContinueOnError="False" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="561.6,3308" sap2010:WorkflowViewState.IdRef="RetryScope_4" NumberOfRetries="3" RetryInterval="00:00:10">
         <ui:RetryScope.ActivityBody>
           <ActivityAction>
-            <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="660,3664.8" sap2010:WorkflowViewState.IdRef="Sequence_17">
+            <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="520,3132" sap2010:WorkflowViewState.IdRef="Sequence_17">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open browser on PC Garage" sap:VirtualizedContainerService.HintSize="616.8,3575.2" sap2010:WorkflowViewState.IdRef="OpenBrowser_3" Url="https://www.pcgarage.ro/notebook-laptop/">
+              <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open browser on PC Garage" sap:VirtualizedContainerService.HintSize="476.79999999999995,3042.4" sap2010:WorkflowViewState.IdRef="OpenBrowser_3" Url="https://www.pcgarage.ro/notebook-laptop/">
                 <ui:OpenBrowser.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="583.2,3472.8" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="443.2,2940" sap2010:WorkflowViewState.IdRef="Sequence_29">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540,3383.2" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,2850.4" sap2010:WorkflowViewState.IdRef="Sequence_28">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:Boolean" Name="siteIsOpen" />
                           <Variable x:TypeArguments="x:String" Default="[preferences(0).ToString]" Name="laptopCategory" />
@@ -157,8 +157,8 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="477.6,24.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-                        <ui:UiElementExists DisplayName="Check if site is opened" Exists="[siteIsOpen]" sap:VirtualizedContainerService.HintSize="477.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
+                        <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="337.6,24.8" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                        <ui:UiElementExists DisplayName="Check if site is opened" Exists="[siteIsOpen]" sap:VirtualizedContainerService.HintSize="337.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
                           <ui:UiElementExists.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4079f553-1a09-423c-80bc-d412ce0657ec" InformativeScreenshot="d6b4c4d8e580dffed360a100402879a6" Selector="&lt;webctrl parentid='category_name' tag='B' /&gt;">
                               <ui:Target.TimeoutMS>
@@ -170,7 +170,7 @@
                             </ui:Target>
                           </ui:UiElementExists.Target>
                         </ui:UiElementExists>
-                        <If Condition="[siteIsOpen &lt;&gt; True]" DisplayName="Throw if site not opened." sap:VirtualizedContainerService.HintSize="477.6,52.8" sap2010:WorkflowViewState.IdRef="If_2">
+                        <If Condition="[siteIsOpen &lt;&gt; True]" DisplayName="Throw if site not opened." sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="If_2">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -197,7 +197,7 @@
                             </Sequence>
                           </If.Else>
                         </If>
-                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click on advanced filters" sap:VirtualizedContainerService.HintSize="477.6,107.2" sap2010:WorkflowViewState.IdRef="Click_23" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click on advanced filters" sap:VirtualizedContainerService.HintSize="337.6,107.2" sap2010:WorkflowViewState.IdRef="Click_23" KeyModifiers="None" MouseButton="BTN_LEFT">
                           <ui:Click.CursorPosition>
                             <ui:CursorPosition Position="Center">
                               <ui:CursorPosition.OffsetX>
@@ -219,7 +219,7 @@
                             </ui:Target>
                           </ui:Click.Target>
                         </ui:Click>
-                        <ui:UiElementExists DisplayName="Check if requested category exists" Exists="[existsCategory]" sap:VirtualizedContainerService.HintSize="477.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_11">
+                        <ui:UiElementExists DisplayName="Check if requested category exists" Exists="[existsCategory]" sap:VirtualizedContainerService.HintSize="337.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_11">
                           <ui:UiElementExists.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="449be8f0-e28d-4103-8ee7-38dfeb591d4b" InformativeScreenshot="4047d28f3fea1f64ed8a9d05c967623c" Selector="[string.Format(&quot;&lt;webctrl aaname='*{0}*' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;p&amp;gt;label&amp;gt;span&amp;gt;span' tag='SPAN' /&gt;&quot;, laptopCategory)]">
                               <ui:Target.TimeoutMS>
@@ -231,7 +231,7 @@
                             </ui:Target>
                           </ui:UiElementExists.Target>
                         </ui:UiElementExists>
-                        <If Condition="[existsCategory = True]" DisplayName="If requested category exists then select it" sap:VirtualizedContainerService.HintSize="477.6,52.8" sap2010:WorkflowViewState.IdRef="If_10">
+                        <If Condition="[existsCategory = True]" DisplayName="If requested category exists then select it" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="If_10">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -280,7 +280,7 @@
                             </Sequence>
                           </If.Else>
                         </If>
-                        <ui:ClickText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" FormattedText="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click on &quot;More options...&quot;" sap:VirtualizedContainerService.HintSize="477.6,135.2" sap2010:WorkflowViewState.IdRef="ClickText_2" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="True" Text="mai multe...">
+                        <ui:ClickText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" FormattedText="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click on &quot;More options...&quot;" sap:VirtualizedContainerService.HintSize="337.6,135.2" sap2010:WorkflowViewState.IdRef="ClickText_2" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="True" Text="mai multe...">
                           <ui:ClickText.CursorPosition>
                             <ui:CursorPosition Position="Center">
                               <ui:CursorPosition.OffsetX>
@@ -292,7 +292,7 @@
                             </ui:CursorPosition>
                           </ui:ClickText.CursorPosition>
                           <ui:ClickText.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bb2cff00-efab-43c1-9ce4-a2ae6d4cad59" InformativeScreenshot="3431b141d4351e78118b59bf5ad725d5" Selector="&lt;webctrl aaname='mai multe...' class='filters_name' parentid='filters_advanced' tag='SPAN' /&gt;">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="bb2cff00-efab-43c1-9ce4-a2ae6d4cad59" InformativeScreenshot="3431b141d4351e78118b59bf5ad725d5" Selector="&lt;webctrl class='panel-body' idx='3' parentid='filters_advanced' tag='DIV' /&gt;">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
@@ -302,7 +302,7 @@
                             </ui:Target>
                           </ui:ClickText.Target>
                         </ui:ClickText>
-                        <ui:UiElementExists DisplayName="Check if requested brand exists" Exists="[existsBrand]" sap:VirtualizedContainerService.HintSize="477.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_12">
+                        <ui:UiElementExists DisplayName="Check if requested brand exists" Exists="[existsBrand]" sap:VirtualizedContainerService.HintSize="337.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_12">
                           <ui:UiElementExists.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b4d5326e-296d-4e11-ac74-5bfa9fe17ee1" InformativeScreenshot="fce614782437a628b71cdaa1f77206ca" Selector="[string.Format(&quot;&lt;webctrl aaname='*{0}*' parentid='filters_adv*' tag='SPAN' /&gt;&quot;, laptopBrand)]">
                               <ui:Target.TimeoutMS>
@@ -314,7 +314,7 @@
                             </ui:Target>
                           </ui:UiElementExists.Target>
                         </ui:UiElementExists>
-                        <If Condition="[existsBrand = True]" DisplayName="If requested brand exists, click on it" sap:VirtualizedContainerService.HintSize="477.6,52.8" sap2010:WorkflowViewState.IdRef="If_11">
+                        <If Condition="[existsBrand = True]" DisplayName="If requested brand exists, click on it" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="If_11">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -363,7 +363,7 @@
                             </Sequence>
                           </If.Else>
                         </If>
-                        <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set focus on min price" sap:VirtualizedContainerService.HintSize="477.6,107.2" sap2010:WorkflowViewState.IdRef="SetFocus_1">
+                        <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set focus on min price" sap:VirtualizedContainerService.HintSize="337.6,107.2" sap2010:WorkflowViewState.IdRef="SetFocus_1">
                           <ui:SetFocus.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a1c629a2-fa3d-4dce-8aab-3276e5a0c2d8" InformativeScreenshot="16caf73d882afd9da284e87ce7a04968" Selector="&lt;webctrl id='minprice' tag='INPUT' /&gt;">
                               <ui:Target.TimeoutMS>
@@ -375,7 +375,7 @@
                             </ui:Target>
                           </ui:SetFocus.Target>
                         </ui:SetFocus>
-                        <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="1000" DelayMS="1000" DisplayName="Type min price" EmptyField="True" sap:VirtualizedContainerService.HintSize="477.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_3" SimulateType="True" Text="[preferences(2).ToString]">
+                        <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="1000" DelayMS="1000" DisplayName="Type min price" EmptyField="True" sap:VirtualizedContainerService.HintSize="337.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_3" SimulateType="True" Text="[preferences(2).ToString]">
                           <ui:TypeInto.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="aff2aa4d-c799-484b-9dd5-c36d1d93b02a" InformativeScreenshot="736b723b3b16795ca3d9d55f8c9c936c" Selector="&lt;webctrl id='minprice' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
                               <ui:Target.TimeoutMS>
@@ -384,7 +384,7 @@
                             </ui:Target>
                           </ui:TypeInto.Target>
                         </ui:TypeInto>
-                        <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set focus on  max price" sap:VirtualizedContainerService.HintSize="477.6,107.2" sap2010:WorkflowViewState.IdRef="SetFocus_2">
+                        <ui:SetFocus DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Set focus on  max price" sap:VirtualizedContainerService.HintSize="337.6,107.2" sap2010:WorkflowViewState.IdRef="SetFocus_2">
                           <ui:SetFocus.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="33357f12-b70c-4b81-8ef0-61ad3609b287" InformativeScreenshot="17ab7ab61d6e820cfdc10184b4a36fa0" Selector="&lt;webctrl id='maxprice' tag='INPUT' /&gt;">
                               <ui:Target.TimeoutMS>
@@ -396,7 +396,7 @@
                             </ui:Target>
                           </ui:SetFocus.Target>
                         </ui:SetFocus>
-                        <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="1000" DelayMS="1000" DisplayName="Type max price" EmptyField="True" sap:VirtualizedContainerService.HintSize="477.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_4" SimulateType="True" Text="[preferences(3).ToString]">
+                        <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBetweenKeys="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="1000" DelayMS="1000" DisplayName="Type max price" EmptyField="True" sap:VirtualizedContainerService.HintSize="337.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_4" SimulateType="True" Text="[preferences(3).ToString]">
                           <ui:TypeInto.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e6ff2494-b25b-492a-939e-f9ce5e0a3374" InformativeScreenshot="4d91426738a100397a7e15fdb130d201" Selector="&lt;webctrl id='maxprice' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
                               <ui:Target.TimeoutMS>
@@ -405,7 +405,7 @@
                             </ui:Target>
                           </ui:TypeInto.Target>
                         </ui:TypeInto>
-                        <ui:UiElementExists DisplayName="Check if processor brand exists" Exists="[existsProcBrand]" sap:VirtualizedContainerService.HintSize="477.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_13">
+                        <ui:UiElementExists DisplayName="Check if processor brand exists" Exists="[existsProcBrand]" sap:VirtualizedContainerService.HintSize="337.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_13">
                           <ui:UiElementExists.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="90d04b50-1cec-45ea-b833-ea52fa43403f" InformativeScreenshot="1edae265cb90bd9177921a51484f66f9" Selector="[string.Format(&quot;&lt;webctrl aaname='*{0}*' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;p&amp;gt;label&amp;gt;span&amp;gt;span' tag='SPAN' /&gt;&quot;, processorBrand)]">
                               <ui:Target.TimeoutMS>
@@ -417,7 +417,7 @@
                             </ui:Target>
                           </ui:UiElementExists.Target>
                         </ui:UiElementExists>
-                        <If Condition="[existsProcBrand = True]" DisplayName="If proc. brand exists, click on it" sap:VirtualizedContainerService.HintSize="477.6,52.8" sap2010:WorkflowViewState.IdRef="If_12">
+                        <If Condition="[existsProcBrand = True]" DisplayName="If proc. brand exists, click on it" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="If_12">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -443,7 +443,7 @@
                                   </ui:CursorPosition>
                                 </ui:ClickText.CursorPosition>
                                 <ui:ClickText.Target>
-                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e9a840ce-cdf9-4581-9b5e-d3b855ac449d" InformativeScreenshot="cfb5a23c58533a492218be0d228bf183" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='12' parentid='filters_advanced' tag='DIV' /&gt;">
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e9a840ce-cdf9-4581-9b5e-d3b855ac449d" InformativeScreenshot="cfb5a23c58533a492218be0d228bf183" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='13' parentid='filters_advanced' tag='DIV' /&gt;">
                                     <ui:Target.TimeoutMS>
                                       <InArgument x:TypeArguments="x:Int32" />
                                     </ui:Target.TimeoutMS>
@@ -466,7 +466,7 @@
                             </Sequence>
                           </If.Else>
                         </If>
-                        <ui:UiElementExists DisplayName="Check if memory amount exists" Exists="[existsMemory]" sap:VirtualizedContainerService.HintSize="477.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_14">
+                        <ui:UiElementExists DisplayName="Check if memory amount exists" Exists="[existsMemory]" sap:VirtualizedContainerService.HintSize="337.6,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_14">
                           <ui:UiElementExists.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d7b7e36b-c5bf-4150-af04-c792df7cc821" InformativeScreenshot="10ca80ff39ae05e7c45df37ef1ba1fa3" Selector="[string.Format(&quot;&lt;webctrl aaname='*{0} GB*' parentid='filters_adv*' tag='SPAN' /&gt;&quot;, memoryAmount)]">
                               <ui:Target.TimeoutMS>
@@ -478,10 +478,10 @@
                             </ui:Target>
                           </ui:UiElementExists.Target>
                         </ui:UiElementExists>
-                        <If Condition="[existsMemory]" DisplayName="If mem. amount exists, click on it" sap:VirtualizedContainerService.HintSize="477.6,585.6" sap2010:WorkflowViewState.IdRef="If_13">
+                        <If Condition="[existsMemory]" DisplayName="If mem. amount exists, click on it" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="If_13">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -504,7 +504,7 @@
                                   </ui:CursorPosition>
                                 </ui:ClickText.CursorPosition>
                                 <ui:ClickText.Target>
-                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ffc26259-3f3c-40ae-9920-dc379a2af6b3" InformativeScreenshot="1ebc951e0b474bbdf1d200be3b43678b" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='25' parentid='filters_advanced' tag='DIV' /&gt;">
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ffc26259-3f3c-40ae-9920-dc379a2af6b3" InformativeScreenshot="1ebc951e0b474bbdf1d200be3b43678b" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='26' parentid='filters_advanced' tag='DIV' /&gt;">
                                     <ui:Target.TimeoutMS>
                                       <InArgument x:TypeArguments="x:Int32" />
                                     </ui:Target.TimeoutMS>
@@ -527,7 +527,7 @@
                             </Sequence>
                           </If.Else>
                         </If>
-                        <ui:IfElseIf DisplayName="Apply corresponding storage filter" sap:VirtualizedContainerService.HintSize="477.6,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
+                        <ui:IfElseIf DisplayName="Apply corresponding storage filter" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[preferences(6).ToString = &quot;SSD&quot;]">
@@ -550,7 +550,7 @@
                                         </ui:CursorPosition>
                                       </ui:ClickText.CursorPosition>
                                       <ui:ClickText.Target>
-                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c25a8c7d-9e6c-49e0-b2e7-13ab579ff51b" InformativeScreenshot="b90d7c1e5394b1647c1970640c0dcbbb" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='30' parentid='filters_advanced' tag='DIV' /&gt;">
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c25a8c7d-9e6c-49e0-b2e7-13ab579ff51b" InformativeScreenshot="b90d7c1e5394b1647c1970640c0dcbbb" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='31' parentid='filters_advanced' tag='DIV' /&gt;">
                                           <ui:Target.TimeoutMS>
                                             <InArgument x:TypeArguments="x:Int32" />
                                           </ui:Target.TimeoutMS>
@@ -572,7 +572,7 @@
                                         </ui:CursorPosition>
                                       </ui:ClickText.CursorPosition>
                                       <ui:ClickText.Target>
-                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f7df801b-078c-44a8-91e4-d4d0022e26a6" InformativeScreenshot="913a1416fdbb1ac24e5c22680ca00b72" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='29' parentid='filters_advanced' tag='DIV' /&gt;">
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f7df801b-078c-44a8-91e4-d4d0022e26a6" InformativeScreenshot="913a1416fdbb1ac24e5c22680ca00b72" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='30' parentid='filters_advanced' tag='DIV' /&gt;">
                                           <ui:Target.TimeoutMS>
                                             <InArgument x:TypeArguments="x:Int32" />
                                           </ui:Target.TimeoutMS>
@@ -605,7 +605,7 @@
                                         </ui:CursorPosition>
                                       </ui:ClickText.CursorPosition>
                                       <ui:ClickText.Target>
-                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c25a8c7d-9e6c-49e0-b2e7-13ab579ff51b" InformativeScreenshot="b90d7c1e5394b1647c1970640c0dcbbb" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='30' parentid='filters_advanced' tag='DIV' /&gt;">
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c25a8c7d-9e6c-49e0-b2e7-13ab579ff51b" InformativeScreenshot="b90d7c1e5394b1647c1970640c0dcbbb" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='31' parentid='filters_advanced' tag='DIV' /&gt;">
                                           <ui:Target.TimeoutMS>
                                             <InArgument x:TypeArguments="x:Int32" />
                                           </ui:Target.TimeoutMS>
@@ -627,7 +627,7 @@
                                         </ui:CursorPosition>
                                       </ui:ClickText.CursorPosition>
                                       <ui:ClickText.Target>
-                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f7df801b-078c-44a8-91e4-d4d0022e26a6" InformativeScreenshot="913a1416fdbb1ac24e5c22680ca00b72" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='29' parentid='filters_advanced' tag='DIV' /&gt;">
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f7df801b-078c-44a8-91e4-d4d0022e26a6" InformativeScreenshot="913a1416fdbb1ac24e5c22680ca00b72" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='30' parentid='filters_advanced' tag='DIV' /&gt;">
                                           <ui:Target.TimeoutMS>
                                             <InArgument x:TypeArguments="x:Int32" />
                                           </ui:Target.TimeoutMS>
@@ -649,7 +649,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:IfElseIf>
-                        <ui:IfElseIf DisplayName="Apply corresponding GPU filter" sap:VirtualizedContainerService.HintSize="477.6,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_6">
+                        <ui:IfElseIf DisplayName="Apply corresponding GPU filter" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_6">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[preferences(7).ToString = &quot;Da&quot;]">
@@ -672,7 +672,7 @@
                                         </ui:CursorPosition>
                                       </ui:ClickText.CursorPosition>
                                       <ui:ClickText.Target>
-                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="35e47fb7-3778-49f1-a375-af261e803090" InformativeScreenshot="46b8d04a0b52b8d382d13854bf230f2d" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='24' parentid='filters_advanced' tag='DIV' /&gt;">
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="35e47fb7-3778-49f1-a375-af261e803090" InformativeScreenshot="46b8d04a0b52b8d382d13854bf230f2d" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='25' parentid='filters_advanced' tag='DIV' /&gt;">
                                           <ui:Target.TimeoutMS>
                                             <InArgument x:TypeArguments="x:Int32" />
                                           </ui:Target.TimeoutMS>
@@ -727,7 +727,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:IfElseIf>
-                        <ui:IfElseIf DisplayName="Apply corresponding optical drive filter" sap:VirtualizedContainerService.HintSize="477.6,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_7">
+                        <ui:IfElseIf DisplayName="Apply corresponding optical drive filter" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_7">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[preferences(8).ToString = &quot;Nu&quot;]">
@@ -750,7 +750,7 @@
                                         </ui:CursorPosition>
                                       </ui:ClickText.CursorPosition>
                                       <ui:ClickText.Target>
-                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0ac7db26-d6aa-4f82-9cae-f275c184cb28" InformativeScreenshot="932163ef3c3ae2c2225f8785f8fc4b9e" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='34' parentid='filters_advanced' tag='DIV' /&gt;">
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0ac7db26-d6aa-4f82-9cae-f275c184cb28" InformativeScreenshot="932163ef3c3ae2c2225f8785f8fc4b9e" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='35' parentid='filters_advanced' tag='DIV' /&gt;">
                                           <ui:Target.TimeoutMS>
                                             <InArgument x:TypeArguments="x:Int32" />
                                           </ui:Target.TimeoutMS>
@@ -783,7 +783,7 @@
                                         </ui:CursorPosition>
                                       </ui:ClickText.CursorPosition>
                                       <ui:ClickText.Target>
-                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0ac7db26-d6aa-4f82-9cae-f275c184cb28" InformativeScreenshot="932163ef3c3ae2c2225f8785f8fc4b9e" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='34' parentid='filters_advanced' tag='DIV' /&gt;">
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0ac7db26-d6aa-4f82-9cae-f275c184cb28" InformativeScreenshot="932163ef3c3ae2c2225f8785f8fc4b9e" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='35' parentid='filters_advanced' tag='DIV' /&gt;">
                                           <ui:Target.TimeoutMS>
                                             <InArgument x:TypeArguments="x:Int32" />
                                           </ui:Target.TimeoutMS>
@@ -805,7 +805,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:IfElseIf>
-                        <ui:IfElseIf DisplayName="Apply corresponding RGB keyboard filter" sap:VirtualizedContainerService.HintSize="477.6,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_8">
+                        <ui:IfElseIf DisplayName="Apply corresponding RGB keyboard filter" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="IfElseIf_8">
                           <ui:IfElseIf.ConditionBlocks>
                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                               <ui:IfElseIfBlock BlockType="If" Condition="[preferences(9).ToString = &quot;Da&quot;]">
@@ -828,7 +828,7 @@
                                         </ui:CursorPosition>
                                       </ui:ClickText.CursorPosition>
                                       <ui:ClickText.Target>
-                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9e9959c6-b1f2-4a6f-8312-bc0f735a2f05" InformativeScreenshot="e27844af14eb8e3c099e3df345b85f0a" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='60' parentid='filters_advanced' tag='DIV' /&gt;">
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9e9959c6-b1f2-4a6f-8312-bc0f735a2f05" InformativeScreenshot="e27844af14eb8e3c099e3df345b85f0a" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='61' parentid='filters_advanced' tag='DIV' /&gt;">
                                           <ui:Target.TimeoutMS>
                                             <InArgument x:TypeArguments="x:Int32" />
                                           </ui:Target.TimeoutMS>
@@ -861,7 +861,7 @@
                                         </ui:CursorPosition>
                                       </ui:ClickText.CursorPosition>
                                       <ui:ClickText.Target>
-                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9e9959c6-b1f2-4a6f-8312-bc0f735a2f05" InformativeScreenshot="e27844af14eb8e3c099e3df345b85f0a" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='60' parentid='filters_advanced' tag='DIV' /&gt;">
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9e9959c6-b1f2-4a6f-8312-bc0f735a2f05" InformativeScreenshot="e27844af14eb8e3c099e3df345b85f0a" Selector="&lt;webctrl class='panel-body' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='61' parentid='filters_advanced' tag='DIV' /&gt;">
                                           <ui:Target.TimeoutMS>
                                             <InArgument x:TypeArguments="x:Int32" />
                                           </ui:Target.TimeoutMS>
@@ -883,7 +883,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:IfElseIf>
-                        <ui:ClickText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" FormattedText="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Update the laptops list" sap:VirtualizedContainerService.HintSize="477.6,135.2" sap2010:WorkflowViewState.IdRef="ClickText_16" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="True" Text="Aplica filtrele">
+                        <ui:ClickText ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" FormattedText="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Update the laptops list" sap:VirtualizedContainerService.HintSize="337.6,135.2" sap2010:WorkflowViewState.IdRef="ClickText_16" KeyModifiers="None" MouseButton="BTN_LEFT" Occurrence="1" SendWindowMessages="True" Text="Aplica filtrele">
                           <ui:ClickText.CursorPosition>
                             <ui:CursorPosition Position="Center">
                               <ui:CursorPosition.OffsetX>

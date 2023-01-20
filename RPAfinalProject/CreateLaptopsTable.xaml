@@ -117,7 +117,9 @@
             </sap:WorkflowViewStateService.ViewState>
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ApplyFiltersPCGarage.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="356.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="ApplyFiltersPCGarage.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="sd:DataRow" x:Key="preferences">[preferences]</InArgument>
+                <InArgument x:TypeArguments="sd:DataRow" x:Key="preferences">
+                  <VisualBasicValue x:TypeArguments="sd:DataRow" ExpressionText="preferences" />
+                </InArgument>
               </ui:InvokeWorkflowFile.Arguments>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -127,9 +129,7 @@
             </ui:InvokeWorkflowFile>
             <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FetchLaptopsPCGarage.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="356.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="FetchLaptopsPCGarage.xaml">
               <ui:InvokeWorkflowFile.Arguments>
-                <InOutArgument x:TypeArguments="sd:DataTable" x:Key="laptopsTable">
-                  <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="laptopsTable" />
-                </InOutArgument>
+                <InOutArgument x:TypeArguments="sd:DataTable" x:Key="laptopsTable">[laptopsTable]</InOutArgument>
               </ui:InvokeWorkflowFile.Arguments>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -199,9 +199,7 @@
                 </ui:InvokeWorkflowFile>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FetchLaptopsAltex.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="356.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="FetchLaptopsAltex.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="laptopsTable">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="laptopsTable" />
-                    </InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="laptopsTable">[laptopsTable]</InOutArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -270,9 +268,7 @@
                     </ui:InvokeWorkflowFile>
                     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FetchLaptopsEmag.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="356.8,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_21" UnSafe="False" WorkflowFileName="FetchLaptopsEmag.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
-                        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="laptopsTable">
-                          <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="laptopsTable" />
-                        </InOutArgument>
+                        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="laptopsTable">[laptopsTable]</InOutArgument>
                       </ui:InvokeWorkflowFile.Arguments>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">

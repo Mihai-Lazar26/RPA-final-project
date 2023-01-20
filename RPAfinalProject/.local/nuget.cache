@@ -281,5 +281,13 @@
     "C:\\Users\\Stefi\\.nuget\\packages\\uipath.uiautomation.activities\\22.10.3\\uipath.uiautomation.activities.22.10.3.nupkg.sha512",
     "C:\\Users\\Stefi\\.nuget\\packages\\uipath.vision\\3.6.0\\uipath.vision.3.6.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Stefi\\OneDrive\\Imagini\\Documente\\UiPath\\RPA-final-projevt\\RPAfinalProject\\.local",
+      "message": "Problem reading the cache file C:\\Users\\Stefi\\OneDrive\\Imagini\\Documente\\UiPath\\RPA-final-projevt\\RPAfinalProject\\.local\\nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
